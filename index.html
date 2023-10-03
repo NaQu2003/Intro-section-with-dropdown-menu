@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" alt="website-icon">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  
+<header>
+  <div class="logo">
+    <img src="images/logo.svg" alt="company name logo">
+  </div>
+  <nav>
+      
+    <ul class="menu-bar"> 
+      <div class="positioning-hamburger">
+        <img tabindex = "0" class="menu-icon hidden" class src="images/icon-menu.svg" alt="menu hamburger">
+      </div>
+      <li href="#" class="menu-item"> <a href="#">Features 
+        </a>
+        <img class="arrow-down" src="images/icon-arrow-down.svg" alt="image of arrow pointing down">
+          <ul class="sub-menu-list hidden">
+            <li class="sub-item">
+             <img src="images/icon-todo.svg" alt="todo icon link"> <a href="#">Todo&nbsp;List</a></li>
+             <li class="sub-item">
+                <img src="images/icon-calendar.svg" alt="calendar icon link"> <a href="#">Calendar</a></li>
+                <li class="sub-item">
+                    <img src="images/icon-reminders.svg" alt="reminders icon link"> <a href="#">Reminders</a></li>
+                    <li class="sub-item">
+                        <img src="images/icon-planning.svg" alt="planning icon link"> <a href="#">Planning</a></li>
+          </ul>
+        </li>
+      <li class="menu-item"><a href="#">Company</a>
+          <img class="arrow-down" src="images/icon-arrow-down.svg" alt="image of arrow pointing down">
+          <ul class="sub-menu-list-company hidden">
+            <li class="sub-menu-item-company"> <a href="#">History</a></li>
+            <li class="sub-menu-item-company"> <a href="#">Our&nbsp;Team</a></li>
+            <li class="sub-menu-item-company"><a href="#">Blog</a></li>
+          </ul>
+        
+      </li>
+      <li class="menu-item"><a href="#">Careers</a>
+      </li>
+      <li href="#" class="menu-item"><a href="#">About</a>
+      </li>
+      <div class="login-box-mobile">
+          <a class="login"href="#">Login</a>
+          <a href="#" class="register">Register</a>
+        </div>
+    </ul>
+    <div class="login-box">
+      <a class="login"href="#">Login</a>
+      <a href="#" class="register">Register</a>
+    </div>
+  </nav>
+</header>
+<div class="center-everything">
+<main class="container">
+  <div class="left-side">
+    <h1>Make <br>remote work</h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.</p>
+    <button class="btn">Learn more</button>
+    <div class="images">
+        <img src="images/client-databiz.svg" alt="Data biz icon">
+        <img src="images/client-audiophile.svg" alt="audiophile icon">
+        <img src="images/client-meet.svg" alt="meet icon">
+        <img src="images/client-maker.svg" alt="marker icon">
+      </div>
+  </div>
+  <div class="right-side">
+    <picture>
+      <source media="(min-width:60rem)" srcset="images\image-hero-desktop.png">
+        <img src="images\image-hero-mobile.png" alt="Image of man working on desktop">
+        
+    </picture>
+ 
+  </div>
+</main>
+</div>
+<div class="overlay"></div>
+<!-- 
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+  <script src="mobile-menu-script.js"></script>
+</body>
+</html>
